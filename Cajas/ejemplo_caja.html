@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cajas</title>
+    <link rel="shortcut icon" href="/assets/icono.png" type="image/x-icon">
+    <style>
+        @keyframes bounce {
+           0% {
+               transform: translateY(0);
+           }
+
+
+           50% {
+               transform: translateY(-10px);
+           }
+
+
+           100% {
+               transform: translateY(0);
+           }
+       }
+       .animacion {
+           animation: bounce 1s infinite;
+       }
+
+        body {
+            background-color: gray;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            border: 5px solid #1B263B;
+            align-items: center;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .nav-lista {
+            display: flex;
+            list-style: none; /*Elimina las viñetas*/
+        }
+        li {
+            margin: 20px;
+        }
+        button {
+            border: none;
+            font-size: 16px;
+            color: #FFF;
+            padding: 8px 16px;
+            background-color: #1B263B;
+            border-radius: 6px;
+            margin: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #iniciar_sesion:hover{
+            background: gray;
+            border: 1px solid #1B263B;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <a href="https://www.youtube.com/">
+                <img class="animacion" src="/assets/youtube.webp" alt="logo" width="150px">
+            </a>
+        </div>
+        <nav>
+            <ul class="nav-lista">
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Contactos</a></li>
+            </ul>
+        </nav>
+        <div>
+            <button id="iniciar_sesion">Iniciar Sesión</button>
+        </div>
+    </header>
+</body>
+</html>
