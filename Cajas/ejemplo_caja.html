@@ -39,6 +39,7 @@
         }
         .nav-lista {
             display: flex;
+            align-items: center;
             list-style: none; /*Elimina las viñetas*/
         }
         li {
@@ -63,13 +64,31 @@
             text-decoration: none;
             color: black;
         }
+        main {
+            border: 5px solid #1B263B;
+            background-color: white;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        footer {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(0, 0, 0);
+            border: 5px solid #ffffff;
+            align-items: center;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .h3-footer {
+            color: #FFF;
+        }
     </style>
 </head>
 <body>
     <header>
         <div>
-            <a href="https://www.youtube.com/">
-                <img class="animacion" src="/assets/youtube.webp" alt="logo" width="150px">
+            <a href="">
+                <img class="animacion" src="/assets/pokeball_logo.png" alt="logo" width="150px">
             </a>
         </div>
         <nav>
@@ -77,11 +96,37 @@
                 <li><a href="">Inicio</a></li>
                 <li><a href="">Videos</a></li>
                 <li><a href="">Contactos</a></li>
+                <li><img src="/assets/pikachu.gif" alt="pika" width="100px"></li>
             </ul>
         </nav>
         <div>
             <button id="iniciar_sesion">Iniciar Sesión</button>
         </div>
     </header>
+    <main>
+        <section>
+
+        </section>
+    </main>
+    <footer>
+
+        <h3 class="h3-footer">©Lautaro Ibañez, 2024</h3>
+
+        <ul class="nav-lista">
+            <li>
+                <a target="_blank" href="https://www.whatsapp.com/?lang=es_LA"> <img src="/assets/ws.png" alt="ws" height="70px"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/"><img src="/assets/ig.png" alt="ig" height="65px"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.facebook.com/?locale=es_LA"><img src="/assets/fb.png" alt="fb" height="65px"></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://x.com/"><img src="/assets/x.png" alt="x" height="70px"></a>
+            </li>
+        </ul>
+
+    </footer>
 </body>
 </html>
